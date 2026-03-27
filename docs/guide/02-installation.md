@@ -1,4 +1,4 @@
-# Installation
+# 02 Installation
 
 To get started, you can install the package via Composer.
 
@@ -27,6 +27,3 @@ php artisan laravel-sslcommerz:install
 ```
 
 This will create a `config/sslcommerz.php` file, which you can use to customize the package's behavior.
-
-## Next Steps
-After installing the package, go to the [Configuration](/guide/configuration) section to set up your environment credentials.

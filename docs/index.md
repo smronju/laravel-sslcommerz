@@ -3,43 +3,60 @@ layout: home
 
 hero:
   name: SSLCommerz Laravel
-  text: Seamless Payment Integration
-  tagline: The most reliable and developer-friendly Laravel package for SSLCommerz.
+  text: Local Payments for Laravel Developers.
+  tagline: A fluent API for initiating payments, validating transactions, handling refunds, and verifying hashes — built for sandbox and live environments.
   image:
     src: /banner.png
     alt: SSLCommerz Laravel
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/installation
+      link: /guide/01-overview
     - theme: alt
       text: View on GitHub
       link: https://github.com/smronju/laravel-sslcommerz
 
 features:
-  - icon: 🚀
-    title: Fast Setup
-    details: Integrate SSLCommerz in under 5 minutes with our fluent API and zero-hassle config.
-  - icon: 🔒
-    title: Secure & Reliable
-    details: Built-in hash validation and secure communication paths for production-ready payments.
-  - icon: ⚡️
-    title: Laravel Native
-    details: Supports Laravel 12 & 13 out of the box with Service Providers and Facade support.
+  - icon: 💳
+    title: Initiate Payments
+    details: Fluent chain for order, customer, shipping, callbacks, and gateway selection. Returns a typed response object.
+  - icon: ✅
+    title: Validate Transactions
+    details: Verify hash signatures and validate payment responses before marking orders as paid. Prevents tampering.
+  - icon: 🔄
+    title: Refund with Confidence
+    details: Initiate refunds and poll their status through dedicated response objects. Success, processing, and failure are explicit.
+
 ---
 
-## Why Choose This Package?
+## Running in minutes.
 
-Integrating payment gateways shouldn't be a painful process. **SSLCommerz Laravel** is designed with developer experience in mind, providing a clean syntax that handles all the heavy lifting for you.
+Install the package, publish configuration, set your SSLCommerz store credentials, and define callback routes.
 
-```php
-use Smronju\Sslcommerz\Facades\Sslcommerz;
+```bash
+# Install the package
+composer require smronju/laravel-sslcommerz
 
-$response = Sslcommerz::setOrder($amount, $invoice, 'Course Enrollment')
-    ->setCustomer($name, $email, $phone)
-    ->makePayment();
-
-if ($response->success()) {
-    return redirect($response->gatewayPageURL());
-}
+# Publish configuration
+php artisan laravel-sslcommerz:install
 ```
+
+```env
+# Environment
+SSLCOMMERZ_SANDBOX=true
+SSLCOMMERZ_STORE_ID=your_store_id
+SSLCOMMERZ_STORE_PASSWORD=your_store_password
+SSLCOMMERZ_STORE_CURRENCY=BDT
+
+# Callback routes
+SSLCOMMERZ_ROUTE_SUCCESS=sslcommerz.success
+SSLCOMMERZ_ROUTE_FAILURE=sslcommerz.failure
+SSLCOMMERZ_ROUTE_CANCEL=sslcommerz.cancel
+SSLCOMMERZ_ROUTE_IPN=sslcommerz.ipn
+```
+
+## Start accepting payments with confidence.
+
+A focused SSLCommerz integration for Laravel teams shipping in sandbox or live mode. Minimal footprint, maximum clarity.
+
+[Open Repository](https://github.com/smronju/laravel-sslcommerz) | [Full Documentation](/guide/01-overview)

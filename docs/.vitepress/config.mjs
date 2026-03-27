@@ -8,23 +8,22 @@ export default defineConfig({
     logo: '/banner.png',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/installation' },
+      { text: 'Documentation', link: '/guide/01-overview' },
+      { text: 'GitHub', link: 'https://github.com/smronju/laravel-sslcommerz' },
     ],
     sidebar: [
       {
-        text: 'Getting Started',
+        text: 'Documentation',
         items: [
-          { text: 'Installation', link: '/guide/installation' },
-          { text: 'Configuration', link: '/guide/configuration' },
-        ]
-      },
-      {
-        text: 'Usage',
-        items: [
-          { text: 'Initiate Payment', link: '/guide/initiate-payment' },
-          { text: 'Validate Payment', link: '/guide/validate-payment' },
-          { text: 'Refunds', link: '/guide/refunds' },
-          { text: 'Callbacks & IPN', link: '/guide/callbacks' },
+          { text: '01 Overview', link: '/guide/01-overview' },
+          { text: '02 Installation', link: '/guide/02-installation' },
+          { text: '03 Configuration', link: '/guide/03-configuration' },
+          { text: '04 Routes', link: '/guide/04-routes' },
+          { text: '05 Payment Flow', link: '/guide/05-payment-flow' },
+          { text: '06 Complete Controller', link: '/guide/06-complete-controller' },
+          { text: '07 Refunds', link: '/guide/07-refunds' },
+          { text: '08 API Reference', link: '/guide/08-api-reference' },
+          { text: '09 Response Objects', link: '/guide/09-response-objects' },
         ]
       }
     ],

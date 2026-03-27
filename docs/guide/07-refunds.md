@@ -1,4 +1,4 @@
-# Refunds
+# 07 Refunds
 
 SSLCommerz supports full or partial refunds for your payments. You can use the `refundPayment` method to initiate a refund.
 
@@ -8,7 +8,7 @@ To initiate a refund, use the `refundPayment` method:
 ```php
 use Smronju\Sslcommerz\Facades\Sslcommerz;
 
-$refund = Sslcommerz::refundPayment($bankTranId, $amount, 'Reason for refund');
+$refund = Sslcommerz::refundPayment($bankTranId, $amount, 'Customer requested refund');
 
 if ($refund->success()) {
     // Refund initiated!
