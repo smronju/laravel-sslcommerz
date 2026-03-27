@@ -18,6 +18,9 @@ class SslcommerzServiceProvider extends PackageServiceProvider
             ->name('laravel-sslcommerz')
             ->hasConfigFile('sslcommerz')
             ->hasInstallCommand(function (InstallCommand $command) {
+                // Override the default name 'sslcommerz:install' via Laravel/Symfony 'setName'
+                $command->setName('laravel-sslcommerz:install');
+
                 $command
                     ->publishConfigFile()
                     ->askToStarRepoOnGitHub('smronju/laravel-sslcommerz');
