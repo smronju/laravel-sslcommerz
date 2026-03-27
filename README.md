@@ -1,8 +1,8 @@
 <p align="center">
-    <img src="/art/banner.png" alt="Sslcommerz Laravel Package" width="100%">
+    <img src="/art/banner.png" alt="Laravel SSLCommerz Package" width="100%">
 </p>
 
-# SSLCommerz Laravel
+# Laravel SSLCommerz
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/smronju/laravel-sslcommerz.svg?style=flat-square)](https://packagist.org/packages/smronju/laravel-sslcommerz)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/smronju/laravel-sslcommerz/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/smronju/laravel-sslcommerz/actions?query=workflow%3Arun-tests+branch%3Amain)

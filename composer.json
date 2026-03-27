@@ -1,6 +1,6 @@
 {
     "name": "smronju/laravel-sslcommerz",
-    "description": "SSLCommerz Laravel is a super easy package to integrate SSLCommerz on Laravel websites.",
+    "description": "Laravel SSLCommerz is a super easy package to integrate SSLCommerz on Laravel websites.",
     "keywords": [
         "laravel",
         "sslcommerz",

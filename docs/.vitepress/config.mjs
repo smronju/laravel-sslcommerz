@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   base: '/laravel-sslcommerz/',
-  title: "SSLCommerz Laravel",
+  title: "Laravel SSLCommerz",
   description: "The official documentation for smronju/laravel-sslcommerz",
   themeConfig: {
     logo: '/banner.png',
