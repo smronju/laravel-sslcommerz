@@ -5,9 +5,6 @@ hero:
   name: SSLCommerz Laravel
   text: Local Payments for Laravel Developers.
   tagline: A fluent API for initiating payments, validating transactions, handling refunds, and verifying hashes — built for sandbox and live environments.
-  image:
-    src: /banner.png
-    alt: SSLCommerz Laravel
   actions:
     - theme: brand
       text: Get Started
@@ -26,8 +23,11 @@ features:
   - icon: 🔄
     title: Refund with Confidence
     details: Initiate refunds and poll their status through dedicated response objects. Success, processing, and failure are explicit.
-
 ---
+
+<p align="center">
+  <img src="/banner.png" alt="SSLCommerz Laravel Banner" style="border-radius: 1.5rem; margin: 3rem auto; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15); max-width: 90%;">
+</p>
 
 ## Running in minutes.
 
