@@ -2,31 +2,31 @@
 layout: home
 
 hero:
-  name: SSLCommerz Laravel
-  text: Local Payments for Laravel Developers.
-  tagline: A fluent API for initiating payments, validating transactions, handling refunds, and verifying hashes — built for sandbox and live environments.
-  actions:
-    - theme: brand
-      text: Get Started
-      link: /guide/01-overview
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/smronju/laravel-sslcommerz
+    name: Laravel SSLCommerz
+    text: Local Payments for Laravel Developers.
+    tagline: A fluent API for initiating payments, validating transactions, handling refunds, and verifying hashes — built for sandbox and live environments.
+    actions:
+        - theme: brand
+          text: Get Started
+          link: /guide/01-overview
+        - theme: alt
+          text: View on GitHub
+          link: https://github.com/smronju/laravel-sslcommerz
 
 features:
-  - icon: 💳
-    title: Initiate Payments
-    details: Fluent chain for order, customer, shipping, callbacks, and gateway selection. Returns a typed response object.
-  - icon: ✅
-    title: Validate Transactions
-    details: Verify hash signatures and validate payment responses before marking orders as paid. Prevents tampering.
-  - icon: 🔄
-    title: Refund with Confidence
-    details: Initiate refunds and poll their status through dedicated response objects. Success, processing, and failure are explicit.
+    - icon: 💳
+      title: Initiate Payments
+      details: Fluent chain for order, customer, shipping, callbacks, and gateway selection. Returns a typed response object.
+    - icon: ✅
+      title: Validate Transactions
+      details: Verify hash signatures and validate payment responses before marking orders as paid. Prevents tampering.
+    - icon: 🔄
+      title: Refund with Confidence
+      details: Initiate refunds and poll their status through dedicated response objects. Success, processing, and failure are explicit.
 ---
 
 <p align="center">
-  <img src="/banner.png" alt="SSLCommerz Laravel Banner" style="border-radius: 1.5rem; margin: 3rem auto; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15); max-width: 90%;">
+  <img src="/banner.png" alt="Laravel SSLCommerz Banner" style="border-radius: 1.5rem; margin: 3rem auto; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15); max-width: 90%;">
 </p>
 
 ## Running in minutes.
